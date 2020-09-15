@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html>
-    <head lang="en">
-        <title>Business Blog</title>
-    </head>
+{% extends 'blog/base.html' %}
 
-    <section>
-        <form action="" method="post">
-            <p>
-                Please Submit your Blog:
-                <input type="text" name="url">
-            </p>
-            <p>
-                <button type="submit">Submit</button>
-            </p>
-        </form>
-    </section>
-</html>
+{% block title %}
+Business Blog
+{% endblock title %}
+
+{% block content %}
+<section>
+    <p></p>
+</section>
+
+<section>
+    <form action="" method="post">
+        <p>
+            Please Submit your Blog:
+            <input type="text" name="url">
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+</section>
+{% endblock content %}
