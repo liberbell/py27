@@ -6,7 +6,11 @@ Business Blog
 
 {% block content %}
 <section>
-    <p></p>
+    {% for post in posts %}
+    <h1>{{ post.title }}</h1>
+    <p>By {{ post.auther }} on {{ post.data_posted }}</p>
+    <p>{{ post.content }}</p>
+    {% endfor %}
 </section>
 
 <section>
