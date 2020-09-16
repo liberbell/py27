@@ -8,7 +8,7 @@ Business Blog
 {% comment %} <section>
     {% for post in posts %}
     <h1>{{ post.title }}</h1>
-    <p>By {{ post.auther }} on {{ post.date_posted }}</p>
+    <p>By {{ post.author }} on {{ post.date_posted }}</p>
     <p>{{ post.content }}</p>
     {% endfor %}
 </section> {% endcomment %}
@@ -19,7 +19,7 @@ Business Blog
         <article>
             <div class="media-body">
                 <div class="list-group">
-                    <a href="#">{{ post.auther }}</a>
+                    <a href="#">{{ post.author }}</a>
                     <small>{{ post.date._posted }}</small>
                 </div>
                 <h2><a href="#">{{ post.title }}</a></h2>
