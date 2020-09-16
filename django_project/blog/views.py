@@ -7,13 +7,13 @@ def index(request):
 
 posts = [
     {
-        'author': 'Bob',
+        'auther': 'Bob',
         'title': 'Blog Post 1',
         'content': 'First post content',
         'date_posted': 'October 25, 2019'
     },
     {
-        'author': 'Joel',
+        'auther': 'Joel',
         'title': 'Blog Post 2',
         'content': 'Second post content',
         'date_posted': 'October 26, 2019'
