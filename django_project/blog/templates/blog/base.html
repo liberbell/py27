@@ -49,7 +49,7 @@
       <div class="row">
         {% if messages %}
             {% for message in messages %}
-                <div class=""></div> 
+                <div class="alert alert-{{ message.tags }}"></div> 
             {% endfor %}
         {% endif %}
       </div>
