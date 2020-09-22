@@ -1,4 +1,4 @@
-{% extends "blog/base.html" %}
+%{% extends "blog/base.html" %}
 {% load crispy_forms_tags %}
 
 {% block content %}
@@ -16,11 +16,11 @@
 
     <div>
         <small>
-            Already have an account? <a href="#">Sign In</a>
+            Already have an account? <a href="{% url 'login'%}">Login</a>
         </small>
     </div>
 </div>
 {% endblock content %}
 
 {% block footer %}
-{% endblock footer %}
+{% endblock footer %}%
