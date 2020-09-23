@@ -37,12 +37,12 @@
         <div id="navbar" class="navbar-collapse collapse">
         {% if user.is_authenticated %}
             <form class="navbar-form navbar-right" role="form">
-              <a class="btn btn-success" href="{% url 'logout'%}">Logout</a>
+              <a class="btn btn-success" href="{% url 'logout'%}" role="button">Logout</a>
             </form>
         {% else %}
             <form class="navbar-form navbar-right" role="form">
-              <a class="btn btn-success" href="{% url 'login' %}"role="button">Sign in</a>
-              <a class="btn btn-success" href="{% url 'register' %}"role="button">Register</a>
+              <a class="btn btn-success" href="{% url 'login' %}" role="button">Sign in</a>
+              <a class="btn btn-success" href="{% url 'register' %}" role="button">Register</a>
             </form>
         {% endif%}
         </div><!--/.navbar-collapse -->
