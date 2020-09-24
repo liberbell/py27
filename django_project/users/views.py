@@ -18,5 +18,6 @@ def register(request):
     # form = UserCreationForm()
     return render(request, 'users/register.html', {'form': form})
 
+@login_requireds
 def profile(request):
     return render(request, 'users/profile.html')
