@@ -15,6 +15,6 @@ def business(request):
 
 class PostListView(ListView):
     model = Post
-    template_name ='blog/business.html'
+    template_name = 'blog/business.html'
     context_object_name = 'posts'
     ordering = ['-date_posted']
