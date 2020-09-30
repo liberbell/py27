@@ -44,3 +44,6 @@ class PostUpdateView(UserPassesTestMixin, UpdateView):
         if self.request.user == post.author:
             return True
         return False
+
+class PostDeleteView(UserPassesTestMixin, DeleteView):
+    model = Post
