@@ -31,7 +31,7 @@ class PostCreateView(CreateView):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
-class PostUpdateView(UpdateView):
+class PostUpdateView(UserPassesTestMixin, UpdateView):
     model = Post
     fields = ['title', 'content']
 
