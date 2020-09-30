@@ -31,15 +31,11 @@ Business Blog
 </section>
 
 <section class="container">
-    <form action="" method="post">
-        <p>
-            Please Submit your Blog:
-            <input type="text" name="url">
-        </p>
-        <p>
-            <button type="submit">Submit</button>
-        </p>
-    </form>
+    <div>
+        <section>
+            <a href="{% url 'post-crfeate %}">Click here to create new post.</a>
+        </section>
+    </div>
 </section>
 {% endblock content %}
 
