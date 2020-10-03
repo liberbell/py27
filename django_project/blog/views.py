@@ -55,3 +55,6 @@ class PostDeleteView(UserPassesTestMixin, DeleteView):
         if self.request.user == post.author:
             return True
         return False
+
+class PostYearArchiveView(YearArchiveView):
+    queryset = Post.objects.all()
