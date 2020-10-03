@@ -4,3 +4,13 @@
 {% block title %}
 Archive Blog
 {% endblock title %}
+
+{% block content %}
+<div class="container">
+    <section>
+        <div>
+            <h1>All archive for {{ year|date:"Y" }}</h1>
+        </div>
+    </section>
+</div>
+{% endblock content %}
