@@ -58,3 +58,6 @@ class PostDeleteView(UserPassesTestMixin, DeleteView):
 
 class PostYearArchiveView(YearArchiveView):
     queryset = Post.objects.all()
+    date_field = "date_posted"
+    make_object_list = True
+    allow_future = True
