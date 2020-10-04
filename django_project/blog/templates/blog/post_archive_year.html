@@ -9,7 +9,7 @@ Archive Blog
 <div class="container">
     <section>
         <div>
-            <h1>All archive for {{ year|date:"Y" }}</h1>
+            <h1>All articles for {{ year|date:"Y" }}</h1>
             {% for obj in object_list %}
                 <p>
                     <li>{{ obj.title }} - {{ obj.date_posted | date:"F j, Y"}}</li>
