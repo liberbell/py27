@@ -62,5 +62,5 @@ class PostYearArchiveView(YearArchiveView):
     make_object_list = True
     allow_future = True
 
-class about(request):
+def about(request):
     return render(request, 'blog/about.html')
