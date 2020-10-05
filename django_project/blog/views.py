@@ -61,3 +61,6 @@ class PostYearArchiveView(YearArchiveView):
     date_field = "date_posted"
     make_object_list = True
     allow_future = True
+
+class about(request):
+    return render(request, 'blog/about.html')
